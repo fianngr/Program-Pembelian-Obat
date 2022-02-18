@@ -62,7 +62,6 @@ while True :
             i+=1
     elif pilihan == 3 :
             if len (jumlah_transaksi) != 0 :
-                s = 0
                 hapus = input ("Apakah Anda Ingin Menghapus Pesanan ? (Y/N):")
                 if hapus == "y" or hapus == "Y" :
                     Banyak = int(input("Berapa Banyak Yang Ingin Anda Hapus ? :"))
@@ -79,8 +78,6 @@ while True :
                         del jumlah_beli [barang-1]
                         del jumlah_harga [barang-1]
                         del id_produk[barang-1]
-                        del jumlah_transaksi [barang-1]
-                        del transaksi [barang-1]
                         z+=1
                         print ("Berhasil Terhapus")
                         print ("===============================================================")
